@@ -18,5 +18,3 @@ function clearAll () {
 }
 
 document.querySelectorAll('.ac').onclick = claearAll;
-let g=1;
-console.log()
