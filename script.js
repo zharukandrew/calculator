@@ -17,4 +17,23 @@ function clearAll () {
     out.textContent = 0;
 }
 
-document.querySelectorAll('.ac').onclick = claearAll;
+document.querySelector('.ac').onclick = clearAll;
+document.querySelector('.buttons').onclick = (event) => {
+    // нажата не кнопка 
+    if(!event.target.classList.contains('btn')) return;
+    //нажата кнопка clearAll ac
+    if(event.target.classList.contains('ac')) return;
+
+    out.textContent = '';
+    //получаю нажатую кнопку
+    const key = event.target.textContent;
+
+
+    //если нажата 0-9 или .
+    
+    if(digit.includes(key)){
+        a+=key;
+        console.log(a , b , sign)
+        out.textContent = a;
+    }
+};
