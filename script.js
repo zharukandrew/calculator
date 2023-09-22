@@ -87,3 +87,4 @@ document.querySelector('.buttons').onclick = (event) => {
         console.table(a , b , sign);
     }
 };
+
